@@ -1,0 +1,63 @@
+### API 1 - Get all states
+GET http://localhost:3000/states/
+Accept: application/json
+
+###
+
+### API 2 - Get state by ID
+GET http://localhost:3000/states/8/
+Accept: application/json
+
+###
+
+### API 3 - Create a new district
+POST http://localhost:3000/districts/
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+### API 4 - Get district by ID
+GET http://localhost:3000/districts/323/
+Accept: application/json
+
+###
+
+### API 5 - Delete district by ID
+DELETE http://localhost:3000/districts/223/
+
+###
+
+### API 6 - Update district by ID
+PUT http://localhost:3000/districts/322/
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+### API 7 - Get state statistics by state ID
+GET http://localhost:3000/states/2/stats/
+Accept: application/json
+
+###
+
+### API 8 - Get state name by district ID
+GET http://localhost:3000/districts/220/details/
+Accept: application/json
+
